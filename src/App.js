@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="wrapper">
+      <div className="header">
+        <img
+          src={require("./Assets/background-header.jpg")}
+          alt=""
+          className="back-header"
+        />
+        <h1 className="quote-head">
+          “He who has health has hope and he who has hope has everything.”
+        </h1>
+        <button className="btn-header">Get Started</button>
+      </div>
+
+      <div className="main">
+        
+      </div>
+
+      <div className="footer">
+
+      </div>
     </div>
   );
 }
