@@ -1,4 +1,8 @@
+import React, { useState } from "react";
 import "./App.css";
+import Meal from "./Components/Meal";
+import { breakfastOpt, lunDinOpt, supperOpt } from "./Data/Data";
+import MealDes from "./Components/MealDes";
 
 function App() {
   return (
@@ -16,12 +20,12 @@ function App() {
       </div>
 
       <div className="main">
-        
+        <Meal title="Breakfast" id="bf" options={breakfastOpt} />
+        <Meal title="Lunch/Dinner" id="ld" options={lunDinOpt} />
+        <Meal title="Supper" id="sup" options={supperOpt} />
       </div>
-
-      <div className="footer">
-
-      </div>
+      <MealDes />
+      <div className="footer"></div>
     </div>
   );
 }
