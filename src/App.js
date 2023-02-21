@@ -5,11 +5,13 @@ import { breakfastOpt, lunDinOpt, supperOpt } from "./Data/Data";
 import MealDes from "./Components/MealDes";
 
 function App() {
+  const breakfastImg = "./Assets/breakfast.jpg"
+
   return (
     <div className="wrapper">
       <div className="header">
         <img
-          src={require("./Assets/background-header.jpg")}
+          src={require("./Assets/background-header.png")}
           alt=""
           className="back-header"
         />
@@ -20,7 +22,7 @@ function App() {
       </div>
 
       <div className="main">
-        <Meal title="Breakfast" id="bf" options={breakfastOpt} />
+        <Meal title="Breakfast" id="bf" options={breakfastOpt} img={breakfastImg} />
         <Meal title="Lunch/Dinner" id="ld" options={lunDinOpt} />
         <Meal title="Supper" id="sup" options={supperOpt} />
       </div>
