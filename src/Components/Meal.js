@@ -1,9 +1,9 @@
 import React from "react";
 import "../App.css";
-
+import { Link } from "react-scroll";
 
 const Meal = (props) => {
-  const { title, options, id } = props;
+  const { title, options, id, getDescription } = props;
 
   const generateImg = () => {
     if (id === "bf") {
@@ -12,7 +12,7 @@ const Meal = (props) => {
           src={require("../Assets/breakfast.jpg")}
           alt=""
           style={{
-            width: "90px",
+            width: "80px",
             borderRadius: "50%",
           }}
         />
@@ -41,10 +41,20 @@ const Meal = (props) => {
 
   return (
     <div className="meal">
-      <h2 className="mealTitle">{title}</h2>
+      <h1 className="mealTitle">{title}</h1>
       <div className="wrapperMeal">
-        <a href="" className="opt">
-          {options}
+        <a className="opt">
+          <Link
+            activeClass="active"
+            to="mealDes"
+            spy={true}
+            smooth={true}
+            onClick={() => {
+              getDescription(id);
+            }}
+          >
+            {options}
+          </Link>
         </a>
         {generateImg()}
       </div>

@@ -1,11 +1,19 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 const MealDes = (props) => {
-  const { title } = props;
+  const { title, description } = props;
+  const [result, setResult] = useState("");
+   useEffect(() => {
+     handleClick();
+   });
+  const handleClick = () => {
+    setResult(description);
+  }
+
   return (
     <div className="mealDes">
       <h1>Description</h1>
-      <p>bgauibauhgi auhagag anu is ras shvebaa bodyshi rac weria mokled eg scrolls zgudavs</p>
+      <p className="res">{result}</p>
     </div>
   );
 };
