@@ -7,14 +7,21 @@ import { Link } from "react-scroll";
 import {breakfastDes, lunDinDes, supperDes} from "./Data/Data"
 
 function App() {
+  const bfTitle = "Breakfast";
+  const ldTitle = "Lunch/Dinner";
+  const supTitle = "Supper";
+  const [dTitle, setDTitle] = useState("");
   const [description, setDescription] = useState([]);
 
   const getDescription = (type) => {
     if (type === "bf") {
+      setDTitle(bfTitle);
       setDescription(breakfastDes);
     } else if (type === "ld") {
+      setDTitle(ldTitle);
       setDescription(lunDinDes);
     } else if (type === "sup") {
+      setDTitle(supTitle);
       setDescription(supperDes);
     }
   }
@@ -59,7 +66,7 @@ function App() {
         />
       </div>
 
-      <MealDes description={description} />
+      <MealDes description={description} title={dTitle} />
 
       <div className="footer"></div>
     </div>
