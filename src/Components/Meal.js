@@ -22,7 +22,10 @@ const Meal = (props) => {
         <img
           src={require("../Assets/lDinner.jpg")}
           alt=""
-          style={{ width: "90px" }}
+          style={{
+            width: "90px",
+            borderRadius: "20%"
+          }}
         />
       );
     } else if (id === "sup") {
@@ -32,7 +35,7 @@ const Meal = (props) => {
           alt=""
           style={{
             width: "100px",
-            borderRadius: "50%",
+            borderRadius: "40%",
           }}
         />
       );

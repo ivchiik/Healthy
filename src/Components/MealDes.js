@@ -11,7 +11,7 @@ const MealDes = (props) => {
   const handleClick = () => {
     setDesTitle(title);
     setResult(description);
-  }
+  };
 
   return (
     <div className="mealDes">

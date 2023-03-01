@@ -9,10 +9,7 @@ export const breakfastOpt = [
 export const lunDinOpt = [
   "Buckwheat, ",
   "Boiled Eggs, ",
-  "Boiled Chicken, ",
-  "Boiled Beed, ",
-  "Boiled Fish, ",
-  "Green-Coloured Vegetables, ",
+  "Boiled Meat",
   "Beans, ",
   "Pasta. ",
 ];

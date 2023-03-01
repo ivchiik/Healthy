@@ -68,6 +68,7 @@ body {
   align-self: center;
   flex-direction: row;
   gap: 0.5em;
+  width: 100%;
 }
 
 .meal {
@@ -120,6 +121,57 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer{
+  background-color: #003333;
+  width: 2000px;
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  margin-top: 2em;
+  color: bisque;
+  padding: 60px 0 40px;
+}
+
+.footTitle{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+ul li {
+  margin-bottom: 20px;
+}
+
+.copyright{
+  text-align: right;
+}
+
+.SocialIcons{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    margin-left: 15px;
+}
+
+.footerWrap{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-right: 20px;
+}
+
+.aStyle{
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+  height: 40px;
+  width: 40px;
+  text-decoration: none;
+}
+
 @media (max-width: 768px) {
   .btn-header{
     margin-top: 34vh;
@@ -133,6 +185,7 @@ body {
   align-self: center;
   flex-direction: column;
   margin-top: 17em;
+  width: 100%;
   }
 
   .meal {
@@ -157,6 +210,22 @@ body {
   justify-content: center;
   align-self: center;
   margin-top: 2em;
+}
+
+.res{
+  font-size: 1.3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: fit-content;
+}
+
+.footerWrap{
+    flex-direction: column;
+    text-align: center;
+}
+
+ul{
+  padding: 0;
+  list-style-type: none;
 }
 
 }
