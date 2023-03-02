@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { breakfastDes } from "../Data/Data";
 
 const MealDes = (props) => {
   const { title, description } = props;
@@ -8,10 +9,10 @@ const MealDes = (props) => {
    useEffect(() => {
      handleClick();
    });
-  const handleClick = () => {
-    setDesTitle(title);
-    setResult(description);
-  };
+   const handleClick = () => {
+     setDesTitle(title);
+     setResult(description);
+   };
 
   return (
     <div className="mealDes">
