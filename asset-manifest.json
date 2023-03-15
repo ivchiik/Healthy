@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Healthy/static/css/main.539c5fdc.css",
+    "main.css": "/Healthy/static/css/main.1ef890c4.css",
     "main.js": "/Healthy/static/js/main.734f0cb5.js",
     "static/media/background-header.png": "/Healthy/static/media/background-header.6f0c8e6d1a460a1e2557.png",
     "static/media/breakfast.jpg": "/Healthy/static/media/breakfast.4bb33e2b026e9a65d96c.jpg",
@@ -8,11 +8,11 @@
     "static/media/bpg_extrasquare_mtavruli_2009.ttf": "/Healthy/static/media/bpg_extrasquare_mtavruli_2009.e30b36e07745bf1d0bfa.ttf",
     "static/media/lDinner.jpg": "/Healthy/static/media/lDinner.0d3f9af11458248b4e9f.jpg",
     "index.html": "/Healthy/index.html",
-    "main.539c5fdc.css.map": "/Healthy/static/css/main.539c5fdc.css.map",
+    "main.1ef890c4.css.map": "/Healthy/static/css/main.1ef890c4.css.map",
     "main.734f0cb5.js.map": "/Healthy/static/js/main.734f0cb5.js.map"
   },
   "entrypoints": [
-    "static/css/main.539c5fdc.css",
+    "static/css/main.1ef890c4.css",
     "static/js/main.734f0cb5.js"
   ]
 }
